@@ -1,0 +1,1537 @@
+@-webkit-keyframes animalsWiggle1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes animalsWiggle1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes wiggle {
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  85% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  95% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes wiggle {
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  85% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  95% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes speech {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes speech {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes touch {
+  0% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
+
+@keyframes touch {
+  0% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
+
+body {
+  overflow-y: hidden;
+}
+
+#startAgain {
+  position: relative;
+  top: 5%;
+  left: 5%;
+  width: 200px;
+}
+
+#startAgain button {
+  font-size: 30px;
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+#shed {
+  background-image: url(/img/shed.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+
+.color {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 100%;
+  top: 2%;
+  z-index: 0;
+  text-align: center;
+  line-height: 110px;
+  color: white;
+  font-size: 38px;
+  text-shadow: black 0px 0px 8px;
+}
+
+.color:hover {
+  -webkit-animation: speech 1s infinite;
+          animation: speech 1s infinite;
+}
+
+#theirName {
+  font-size: 40px;
+}
+
+#theirName2, #theirName3 {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.animals {
+  z-index: 1;
+}
+
+.animals:hover {
+  cursor: pointer;
+}
+
+#speech {
+  background-image: url(/img/Speech-Bubble-PNG-Clipartcopy.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -150px;
+  top: -240px;
+  width: 350px;
+  height: 400px;
+  text-align: center;
+  -webkit-animation: speech 1s 1;
+          animation: speech 1s 1;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+#speech h4 {
+  padding: 15px;
+  font-size: 17px;
+  position: absolute;
+  top: 38%;
+  left: 12%;
+  -webkit-transform: translate(-6%, -65%);
+          transform: translate(-6%, -65%);
+}
+
+.number {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 100%;
+  top: 2%;
+  z-index: 0;
+  text-align: center;
+  line-height: 110px;
+  color: black;
+  font-size: 38px;
+  background-color: white;
+}
+
+.number:hover {
+  -webkit-animation: speech 1s infinite;
+          animation: speech 1s infinite;
+}
+
+button {
+  -webkit-animation: wiggle 2s infinite;
+          animation: wiggle 2s infinite;
+}
+
+#farmHome #bgWrapper {
+  background-image: url(/img/farmBg.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 20px 80px 40px;
+  color: black;
+}
+
+#farmHome #title {
+  margin: 20px 0;
+}
+
+#farmHome #title h1 {
+  font-size: 68px;
+  color: white;
+  text-shadow: black 0px 0px 8px;
+}
+
+#farmHome #title h4 {
+  margin-top: 50px;
+  font-size: 48px;
+  color: white;
+  text-shadow: black 0px 0px 8px;
+}
+
+#farmHome #title h4 input {
+  margin-top: 10px;
+  border: none;
+  border-bottom: solid 2px white;
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  max-width: 200px;
+  text-shadow: black 0px 0px 8px;
+}
+
+#farmHome #title h4 input:focus {
+  border: none;
+  outline: none;
+  border-bottom: solid 2px white;
+}
+
+#farmHome #title #nameBtn {
+  font-size: 24px;
+}
+
+#farmHome #farmer {
+  background-image: url(/img/farmer.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 0px;
+  left: 45%;
+}
+
+@media only screen and (max-height: 739px) {
+  #farmHome #farmer {
+    left: 70%;
+    width: 300px;
+  }
+}
+
+#farmHome #farmer #speech {
+  background-image: url(/img/Speech-Bubble-PNG-Clipart.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -300px;
+  top: -280px;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  display: none;
+}
+
+@media only screen and (max-height: 739px) {
+  #farmHome #farmer #speech {
+    top: -200px;
+  }
+}
+
+#farmHome #farmer #speech h4 {
+  padding: 15px;
+  font-size: 17px;
+  position: absolute;
+  top: 48%;
+  left: 10%;
+  -webkit-transform: translate(-6%, -65%);
+          transform: translate(-6%, -65%);
+}
+
+#farmHome #letsGo {
+  font-size: 80px;
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  border-radius: 20px;
+  display: none;
+  -webkit-animation: wiggle 2s infinite;
+          animation: wiggle 2s infinite;
+}
+
+@media only screen and (max-height: 739px) {
+  #farmHome #letsGo {
+    right: 60%;
+    top: 60%;
+  }
+}
+
+#farm {
+  background-image: url(/img/farm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100vw;
+  height: 100vh;
+}
+
+#farm #farmer2ndPg {
+  background-image: url(/img/farmer.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  bottom: 0%;
+  right: 150px;
+}
+
+@media only screen and (max-width: 1068px) {
+  #farm #farmer2ndPg {
+    right: 50px;
+  }
+}
+
+#farm #farmer2ndPg #speech {
+  background-image: url(/img/Speech-Bubble-PNG-Clipartcopy.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -150px;
+  top: -240px;
+  width: 350px;
+  height: 400px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1068px) {
+  #farm #farmer2ndPg #speech {
+    width: 250px;
+    height: 300px;
+    right: -50px;
+  }
+}
+
+#farm #farmer2ndPg #speech #meet {
+  position: relative;
+  top: 35%;
+  left: 5%;
+  font-size: 17px;
+  line-height: 10px;
+}
+
+@media only screen and (max-width: 1068px) {
+  #farm #farmer2ndPg #speech #meet {
+    font-size: 12px;
+  }
+}
+
+#farm #cow a {
+  background-image: url(/img/touch.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation: touch 3s infinite;
+          animation: touch 3s infinite;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 32%;
+  left: 28%;
+}
+
+@media only screen and (max-width: 1068px) {
+  #farm #cow a {
+    bottom: 28%;
+    left: 25%;
+  }
+}
+
+#farm #horse a {
+  background-image: url(/img/touch.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation: touch 3s infinite;
+          animation: touch 3s infinite;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  top: 42%;
+  left: 20%;
+}
+
+@media only screen and (max-width: 1068px) {
+  #farm #horse a {
+    top: 48%;
+    left: 16%;
+  }
+}
+
+#farm #chicken a {
+  background-image: url(/img/touch.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation: touch 3s infinite;
+          animation: touch 3s infinite;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 60%;
+  left: 46%;
+}
+
+@media only screen and (max-width: 1068px) {
+  #farm #chicken a {
+    top: 64%;
+    left: 45%;
+  }
+}
+
+#farm #pig a {
+  background-image: url(/img/touch.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation: touch 3s infinite;
+          animation: touch 3s infinite;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  top: 47%;
+  left: 48%;
+}
+
+@media only screen and (max-width: 1068px) {
+  #farm #pig a {
+    top: 53%;
+    left: 48%;
+  }
+}
+
+#farm #sheep a {
+  background-image: url(/img/touch.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation: touch 3s infinite;
+          animation: touch 3s infinite;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  top: 55%;
+  left: 58%;
+}
+
+@media only screen and (max-width: 1068px) {
+  #farm #sheep a {
+    top: 60%;
+    left: 60%;
+  }
+}
+
+#farm #donkey a {
+  background-image: url(/img/touch.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation: touch 3s infinite;
+          animation: touch 3s infinite;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  top: 43%;
+  left: 68%;
+}
+
+@media only screen and (max-width: 1068px) {
+  #farm #donkey a {
+    top: 50%;
+    left: 70%;
+  }
+}
+
+#farm #rooster a {
+  width: 10%;
+  height: 24%;
+  position: absolute;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  bottom: 26%;
+  left: 65%;
+}
+
+#cowPage #cowWrapper {
+  background-image: url(/img/cowfield.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+#cowPage #cowRed {
+  background-image: url(/img/cow1.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 40%;
+  left: 80%;
+  -webkit-animation: animalsWiggle1 1s infinite;
+          animation: animalsWiggle1 1s infinite;
+}
+
+#cowPage #cowPink {
+  background-image: url(/img/cow3.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 70%;
+  left: 80%;
+  animation: animalsWiggle1 1s infinite reverse;
+}
+
+#cowPage #cowYellow {
+  background-image: url(/img/cow4.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 70%;
+  left: 46%;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-animation: animalsWiggle1 1s infinite;
+          animation: animalsWiggle1 1s infinite;
+}
+
+#cowPage #cowBlue {
+  background-image: url(/img/cow5.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 48%;
+  left: 40%;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  animation: animalsWiggle1 1s infinite reverse;
+}
+
+#cowPage #cowGreen {
+  background-image: url(/img/cow6.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 55%;
+  left: 60%;
+  -webkit-animation: animalsWiggle1 0.8s infinite;
+          animation: animalsWiggle1 0.8s infinite;
+}
+
+#cowPage #red {
+  background-color: red;
+  left: 20%;
+}
+
+#cowPage #red:hover {
+  -webkit-animation: speech 1s infinite;
+          animation: speech 1s infinite;
+}
+
+#cowPage #pink {
+  background-color: #ee76d4;
+  left: 34%;
+}
+
+#cowPage #pink:hover {
+  -webkit-animation: speech 1s infinite;
+          animation: speech 1s infinite;
+}
+
+#cowPage #yellow {
+  background-color: #ffee00;
+  left: 48%;
+}
+
+#cowPage #yellow:hover {
+  -webkit-animation: speech 1s infinite;
+          animation: speech 1s infinite;
+}
+
+#cowPage #blue {
+  background-color: #00a2ff;
+  left: 63%;
+}
+
+#cowPage #blue:hover {
+  -webkit-animation: speech 1s infinite;
+          animation: speech 1s infinite;
+}
+
+#cowPage #green {
+  background-color: #00aa1c;
+  left: 78%;
+}
+
+#cowPage #green:hover {
+  -webkit-animation: speech 1s infinite;
+          animation: speech 1s infinite;
+}
+
+#cowPage #farmerCow {
+  background-image: url(/img/farmer.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+  z-index: 1;
+}
+
+#cowPage #farmerCowDone {
+  background-image: url(/img/farmer.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  z-index: 1;
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  #cowPage #farmerCowDone {
+    top: 55%;
+  }
+}
+
+@media only screen and (max-height: 739px) {
+  #cowPage #farmerCowDone {
+    top: 250px;
+  }
+}
+
+#cowPage #backToFarmCow {
+  font-size: 80px;
+  position: absolute;
+  max-width: 400px;
+  left: 10%;
+  top: 35%;
+  border-radius: 20px;
+  display: none;
+}
+
+#horsePage #horseWrapper {
+  background-image: url(/img/field2.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+#horsePage #shed {
+  background-image: url(/img/shed.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 45%;
+  left: 2%;
+}
+
+@media only screen and (max-width: 1024px) {
+  #horsePage #shed {
+    top: 30%;
+  }
+}
+
+#horsePage #horseTriangle {
+  background-image: url(/img/horseTriangle);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 65%;
+  -webkit-animation: animalsWiggle1 1s infinite;
+          animation: animalsWiggle1 1s infinite;
+}
+
+#horsePage #horseSquare {
+  background-image: url(/img/horseSquare.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 70%;
+  left: 50%;
+  -webkit-animation: animalsWiggle1 0.8s infinite;
+          animation: animalsWiggle1 0.8s infinite;
+}
+
+#horsePage #horseCircle {
+  background-image: url(/img/horseCircle);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 64%;
+  left: 30%;
+  animation: animalsWiggle1 1s infinite reverse;
+}
+
+@media only screen and (max-width: 1024px) {
+  #horsePage #horseCircle {
+    top: 50%;
+  }
+}
+
+#horsePage #horseHeart {
+  background-image: url(/img/horseHeart.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 70%;
+  left: 10%;
+  -webkit-animation: animalsWiggle1 1s infinite;
+          animation: animalsWiggle1 1s infinite;
+}
+
+#horsePage #horseRectangle {
+  background-image: url(/img/horseRectangle.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 70%;
+  left: 70%;
+  animation: animalsWiggle1 1s infinite reverse;
+}
+
+@media only screen and (max-width: 1024px) {
+  #horsePage #horseRectangle {
+    top: 65%;
+    left: 75%;
+  }
+}
+
+#horsePage .shape {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 2%;
+  z-index: 0;
+  text-align: center;
+  line-height: 280px;
+  color: white;
+  font-size: 30px;
+  text-shadow: black 0px 0px 8px;
+}
+
+#horsePage .shape:hover {
+  -webkit-animation: speech 1s infinite;
+          animation: speech 1s infinite;
+}
+
+#horsePage #triangle {
+  background-image: url(/img/triangle.png);
+  background-size: contain;
+  left: 20%;
+}
+
+#horsePage #square {
+  background-image: url(/img/square.png);
+  background-size: contain;
+  left: 34%;
+}
+
+#horsePage #circle {
+  background-image: url(/img/circle.png);
+  background-size: contain;
+  left: 48%;
+}
+
+#horsePage #heart {
+  background-image: url(/img/heart.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 63%;
+}
+
+#horsePage #rectangle {
+  background-image: url(/img/rectangle.png);
+  top: 4%;
+  width: 140px;
+  line-height: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 78%;
+}
+
+#horsePage #farmerHorse {
+  background-image: url(/img/farmer.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+  z-index: 1;
+}
+
+#horsePage #farmerHorseDone {
+  background-image: url(/img/farmer.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  z-index: 1;
+  display: none;
+}
+
+@media only screen and (max-height: 739px) {
+  #horsePage #farmerHorseDone {
+    top: 250px;
+  }
+}
+
+#horsePage #backToFarmHorse {
+  font-size: 80px;
+  position: absolute;
+  max-width: 400px;
+  left: 10%;
+  top: 35%;
+  border-radius: 20px;
+  display: none;
+}
+
+#chickenPage #chickenWrapper {
+  background-image: url(/img/farmyard.png);
+  background-size: cover;
+  background-position: bottom;
+  width: 100vw;
+  height: 100vh;
+}
+
+#chickenPage #shedChicken {
+  background-image: url(/img/shed.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 12%;
+  left: 2%;
+}
+
+@media only screen and (max-width: 1024px) {
+  #chickenPage #shedChicken {
+    top: 25%;
+  }
+}
+
+@media only screen and (max-height: 739px) {
+  #chickenPage #shedChicken {
+    top: 50px;
+  }
+}
+
+#chickenPage #chickenRed {
+  background-image: url(/img/chickenRed.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  top: 80%;
+  left: 80%;
+  -webkit-animation: animalsWiggle1 1s infinite;
+          animation: animalsWiggle1 1s infinite;
+}
+
+#chickenPage #chickenBlue {
+  background-image: url(/img/chickenBlue.png);
+  background-repeat: no-repeat;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  position: absolute;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 30%;
+  animation: animalsWiggle1 1s infinite reverse;
+}
+
+#chickenPage #chickenGreen {
+  background-image: url(/img/chickenGreen.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  top: 70%;
+  left: 15%;
+  -webkit-animation: animalsWiggle1 1s infinite;
+          animation: animalsWiggle1 1s infinite;
+}
+
+#chickenPage #chickenPink {
+  background-image: url(/img/chickenPink.png);
+  background-repeat: no-repeat;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  position: absolute;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  top: 70%;
+  left: 45%;
+  -webkit-animation: animalsWiggle1 0.8s infinite;
+          animation: animalsWiggle1 0.8s infinite;
+}
+
+#chickenPage #chickenYellow {
+  background-image: url(/img/chickenYellow.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  top: 40%;
+  left: 65%;
+  animation: animalsWiggle1 1s infinite reverse;
+}
+
+#chickenPage #redChickDrop {
+  background-color: red;
+  left: 20%;
+}
+
+#chickenPage #blueChickDrop {
+  background-color: blue;
+  left: 34%;
+}
+
+#chickenPage #greenChickDrop {
+  background-color: green;
+  left: 48%;
+}
+
+#chickenPage #pinkChickDrop {
+  background-color: pink;
+  left: 63%;
+}
+
+#chickenPage #yellowChickDrop {
+  background-color: yellow;
+  left: 78%;
+}
+
+#chickenPage #farmerChicken {
+  background-image: url(/img/farmer.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+  z-index: 1;
+}
+
+#chickenPage #farmerChickenDone {
+  background-image: url(/img/farmer.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  z-index: 1;
+  display: none;
+}
+
+@media only screen and (max-height: 739px) {
+  #chickenPage #farmerChickenDone {
+    top: 250px;
+  }
+}
+
+#chickenPage #backToFarmChicken {
+  font-size: 80px;
+  position: absolute;
+  max-width: 400px;
+  left: 10%;
+  top: 35%;
+  border-radius: 20px;
+  display: none;
+}
+
+#pigPage #pigWrapper {
+  background-image: url(/img/muddyfield.png);
+  background-size: cover;
+  background-position: bottom;
+  width: 100vw;
+  height: 100vh;
+}
+
+#pigPage #pig1 {
+  background-image: url(/img/pig1.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 80%;
+  left: 80%;
+  -webkit-animation: animalsWiggle1 1s infinite;
+          animation: animalsWiggle1 1s infinite;
+}
+
+@media only screen and (max-width: 1024px) {
+  #pigPage #pig1 {
+    left: 75%;
+  }
+}
+
+#pigPage #pig2 {
+  background-image: url(/img/pig2.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 60%;
+  -webkit-animation: animalsWiggle1 0.7s infinite;
+          animation: animalsWiggle1 0.7s infinite;
+}
+
+@media only screen and (max-width: 1024px) {
+  #pigPage #pig2 {
+    top: 55%;
+  }
+}
+
+#pigPage #pig3 {
+  background-image: url(/img/pig3.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 70%;
+  left: 35%;
+  -webkit-animation: animalsWiggle1 1s infinite;
+          animation: animalsWiggle1 1s infinite;
+}
+
+#pigPage #pig4 {
+  background-image: url(/img/pig4.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 40%;
+  left: 10%;
+  animation: animalsWiggle1 1s infinite reverse;
+}
+
+@media only screen and (max-width: 1024px) {
+  #pigPage #pig4 {
+    left: 32%;
+    top: 45%;
+  }
+}
+
+#pigPage #pig5 {
+  background-image: url(/img/pig5.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 75%;
+  left: 10%;
+  -webkit-animation: animalsWiggle1 0.8s infinite;
+          animation: animalsWiggle1 0.8s infinite;
+}
+
+#pigPage #N1 {
+  background-color: white;
+  left: 20%;
+}
+
+#pigPage #N2 {
+  left: 34%;
+}
+
+#pigPage #N3 {
+  left: 48%;
+}
+
+#pigPage #N4 {
+  left: 63%;
+}
+
+#pigPage #N5 {
+  left: 78%;
+}
+
+#pigPage #farmerPig {
+  background-image: url(/img/farmer.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+  z-index: 1;
+}
+
+#pigPage #farmerPigDone {
+  background-image: url(/img/farmer.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  z-index: 1;
+  display: none;
+}
+
+@media only screen and (max-height: 739px) {
+  #pigPage #farmerPigDone {
+    top: 250px;
+  }
+}
+
+#pigPage #backToFarmPig {
+  font-size: 80px;
+  position: absolute;
+  max-width: 400px;
+  left: 10%;
+  top: 35%;
+  border-radius: 20px;
+  display: none;
+}
+
+#sheepPage #sheepWrapper {
+  background-image: url(/img/field3.png);
+  background-size: cover;
+  background-position: bottom;
+  width: 100vw;
+  height: 100vh;
+}
+
+#sheepPage #shedSheep {
+  background-image: url(/img/shed.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  left: 2%;
+}
+
+#sheepPage #sheepPlus {
+  background-image: url(/img/sheepplus.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 80%;
+  -webkit-animation: animalsWiggle1 1s infinite;
+          animation: animalsWiggle1 1s infinite;
+}
+
+#sheepPage #sheepMinus {
+  background-image: url(/img/sheepminus.png);
+  background-repeat: no-repeat;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 55%;
+  left: 30%;
+  animation: animalsWiggle1 0.8s infinite reverse;
+}
+
+#sheepPage #sheepTimes {
+  background-image: url(/img/sheeptimes.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 62%;
+  left: 50%;
+  animation: animalsWiggle1 0.7s infinite reverse;
+}
+
+#sheepPage #sheepEquals {
+  background-image: url(/img/sheepequals.png);
+  background-repeat: no-repeat;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 75%;
+  left: 70%;
+  -webkit-animation: animalsWiggle1 0.8s infinite;
+          animation: animalsWiggle1 0.8s infinite;
+}
+
+#sheepPage #sheepDivide {
+  background-image: url(/img/sheepdivide.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 70%;
+  left: 10%;
+  animation: animalsWiggle1 1s infinite reverse;
+}
+
+#sheepPage .symbol {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 100%;
+  top: 2%;
+  z-index: 0;
+  text-align: center;
+  line-height: 110px;
+  color: black;
+  font-size: 58px;
+  background-color: white;
+}
+
+#sheepPage .symbol:hover {
+  -webkit-animation: speech 1s infinite;
+          animation: speech 1s infinite;
+}
+
+#sheepPage #plus {
+  background-color: white;
+  left: 20%;
+}
+
+#sheepPage #minus {
+  left: 34%;
+}
+
+#sheepPage #times {
+  left: 48%;
+}
+
+#sheepPage #equals {
+  left: 63%;
+}
+
+#sheepPage #divide {
+  left: 78%;
+}
+
+#sheepPage #farmerSheep {
+  background-image: url(/img/farmer.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+  z-index: 1;
+}
+
+#sheepPage #farmerSheepDone {
+  background-image: url(/img/farmer.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  z-index: 1;
+  display: none;
+}
+
+@media only screen and (max-height: 739px) {
+  #sheepPage #farmerSheepDone {
+    top: 250px;
+  }
+}
+
+#sheepPage #backToFarmSheep {
+  font-size: 80px;
+  position: absolute;
+  max-width: 400px;
+  left: 10%;
+  top: 35%;
+  border-radius: 20px;
+  display: none;
+}
+
+#donkeyPage #donkeyWrapper {
+  background-image: url(/img/field4.jpg);
+  background-size: cover;
+  background-position: bottom;
+  width: 100vw;
+  height: 100vh;
+}
+
+#donkeyPage #donkey6 {
+  background-image: url(/img/donkey\ 6);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 25%;
+  left: 80%;
+  -webkit-animation: animalsWiggle1 1s infinite;
+          animation: animalsWiggle1 1s infinite;
+}
+
+#donkeyPage #donkey7 {
+  background-image: url(/img/donkey7.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 60%;
+  left: 70%;
+  animation: animalsWiggle1 0.8s infinite reverse;
+}
+
+#donkeyPage #donkey8 {
+  background-image: url(/img/donkey8.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 35%;
+  left: 50%;
+  -webkit-animation: animalsWiggle1 0.8s infinite;
+          animation: animalsWiggle1 0.8s infinite;
+}
+
+#donkeyPage #donkey9 {
+  background-image: url(/img/donkey9.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 30%;
+  animation: animalsWiggle1 1s infinite reverse;
+}
+
+#donkeyPage #donkey10 {
+  background-image: url(/img/donkey10.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 40%;
+  left: 10%;
+  -webkit-animation: animalsWiggle1 0.7s infinite;
+          animation: animalsWiggle1 0.7s infinite;
+}
+
+#donkeyPage #six {
+  background-color: white;
+  left: 20%;
+}
+
+#donkeyPage #seven {
+  left: 34%;
+}
+
+#donkeyPage #eight {
+  left: 48%;
+}
+
+#donkeyPage #nine {
+  left: 63%;
+}
+
+#donkeyPage #ten {
+  left: 78%;
+}
+
+#donkeyPage #farmerDonkey {
+  background-image: url(/img/farmer.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+  z-index: 1;
+}
+
+#donkeyPage #farmerDonkeyDone {
+  background-image: url(/img/farmer.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  z-index: 1;
+  display: none;
+}
+
+@media only screen and (max-height: 739px) {
+  #donkeyPage #farmerDonkeyDone {
+    top: 250px;
+  }
+}
+
+#donkeyPage #backToFarmDonkey {
+  font-size: 80px;
+  position: absolute;
+  max-width: 400px;
+  left: 10%;
+  top: 35%;
+  border-radius: 20px;
+  display: none;
+}
+/*# sourceMappingURL=app.css.map */
